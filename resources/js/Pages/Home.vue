@@ -24,7 +24,7 @@
         </div>
     <div class="container flex min-h-screen">
         <div class="flex flex-col m-auto">
-            <div v-if="date_range" class="report-chart border-2 bg-white shadow mt-10">
+            <div class="report-chart border-2 bg-white shadow mt-10">
                 <canvas id="line-chart" width="600" class="mt-6"></canvas>
             </div>
             <!-- <div class="grid grid-cols-3 gap-4 w-screen"> -->
@@ -74,7 +74,7 @@
 
 <script>
 import Litepicker from "litepicker";
-import Chart, {helpers} from "chart.js";
+import Chart from "chart.js";
 
 export default {
     data() {
